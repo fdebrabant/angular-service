@@ -11,9 +11,11 @@ export class CocktailListComponent implements OnInit {
   constructor(public cocktailService: CocktailService) { }
 
   message!: string;
+  cocktails!: any[];
 
   ngOnInit(): void {
     this.message = this.cocktailService.message
+    this.cocktails = this.cocktailService.cocktails
   }
 
 }

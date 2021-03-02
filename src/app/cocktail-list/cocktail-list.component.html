@@ -1,1 +1,6 @@
 <p>{{message}}</p>
+<div *ngFor="let cocktail of cocktails">
+    <p>{{cocktail.name}}</p>
+    <p>{{cocktail.price}}</p>
+    <img [src]=cocktail.url [alt]=cocktail.name >
+</div>
